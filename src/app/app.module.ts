@@ -13,7 +13,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService }  from './in-memory-data.service';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
+import { SearchComponent } from './search/search.component';
+import { CarouselComponent } from './carousel/carousel.component';
+import { ProductComponent } from './product/product.component';
+import { StarsComponent } from './stars/stars.component';
 
+// Angular 应用是模块化的，它拥有自己的模块化系统，称作 NgModule。
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +28,12 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
     HeroDetailComponent,
     MessagesComponent,
     DashboardComponent,
+    NavbarComponent,
+    FooterComponent,
+    SearchComponent,
+    CarouselComponent,
+    ProductComponent,
+    StarsComponent,
     HeroSearchComponent
   ],
   imports: [
