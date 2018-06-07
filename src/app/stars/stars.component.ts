@@ -10,6 +10,7 @@ export class StarsComponent implements OnInit {
   @Input() private rating: number
 
   private stars: boolean[]
+
   constructor() { }
 
   ngOnInit() {

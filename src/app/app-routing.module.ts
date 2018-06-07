@@ -1,14 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HeroesComponent }      from './heroes/heroes.component';
-import { HeroDetailComponent }  from './hero-detail/hero-detail.component';
-import { DashboardComponent }   from './dashboard/dashboard.component';
+import { HomeComponent } from './home/home.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/dashboard', pathMatch: 'full' }, // 默认指向仪表盘的路由
-  { path: 'heroes', component: HeroesComponent },
-  { path: 'detail/:id', component: HeroDetailComponent },
-  { path: 'dashboard', component: DashboardComponent }
+  { path: '', redirectTo: '/home', pathMatch: 'full' }, // 默认指向home 主页
+  { path: 'home', component: HomeComponent }, // 指向主页的路由
+  { path: 'product/:id', component: ProductDetailComponent } // 指向产品详情的路由
 ];
 @NgModule({
   imports: [ RouterModule.forRoot(routes) ],
