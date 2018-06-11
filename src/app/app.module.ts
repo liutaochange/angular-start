@@ -15,6 +15,7 @@ import { StarsComponent } from './stars/stars.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ProductService } from './share/product.service'
 
 // Angular 应用是模块化的，它拥有自己的模块化系统，称作 NgModule。
 @NgModule({
@@ -43,7 +44,7 @@ import { AppRoutingModule } from './app-routing.module';
       InMemoryDataService, { dataEncapsulation: false }
     )
   ],
-  providers: [],
+  providers: [ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

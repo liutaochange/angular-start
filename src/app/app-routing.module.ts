@@ -6,7 +6,7 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' }, // 默认指向home 主页
   { path: 'home', component: HomeComponent }, // 指向主页的路由
-  { path: 'product/:id', component: ProductDetailComponent } // 指向产品详情的路由
+  { path: 'product/:productId', component: ProductDetailComponent } // 指向产品详情的路由
 ];
 @NgModule({
   imports: [ RouterModule.forRoot(routes) ],

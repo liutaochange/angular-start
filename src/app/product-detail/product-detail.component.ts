@@ -1,5 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import {Component, OnInit, Input} from '@angular/core';
+import {ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'app-product-detail',
@@ -7,12 +7,14 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./product-detail.component.css']
 })
 export class ProductDetailComponent implements OnInit {
-  private title : string
+  private title: number
 
-  constructor(private routerInfo: ActivatedRoute ) { }
+  constructor(private routerInfo: ActivatedRoute) {
+  }
 
   ngOnInit() {
-    this.title = this.routerInfo.snapshot.paramMap.get('id')
+    let productId: number = this.routerInfo.snapshot.paramMap.get('productId')
+    this.title = productId
   }
 
 }
