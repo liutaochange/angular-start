@@ -33,7 +33,7 @@ export class ProductService {
     return this.products.find((product) => product.id == id)
   }
 
-  getComments(id: number): Comment[]{
+  getComments(id: number): Comment[] {
     return this.comments.filter((item: Comment) => item.productId == id)
   }
 }
@@ -46,8 +46,10 @@ export class Product {
     rating: number,
     desc: string,
     categories: Array<string>
-  ){}
+  ) {
+  }
 }
+
 export class Comment {
   constructor(
     id: number,
@@ -56,5 +58,6 @@ export class Comment {
     user: string,
     rating: number,
     content: string,
-  ){}
+  ) {
+  }
 }

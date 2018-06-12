@@ -7,14 +7,13 @@ import {ActivatedRoute} from '@angular/router';
   styleUrls: ['./product-detail.component.css']
 })
 export class ProductDetailComponent implements OnInit {
-  private title: number
+  private title: string
 
   constructor(private routerInfo: ActivatedRoute) {
   }
 
   ngOnInit() {
-    let productId: number = this.routerInfo.snapshot.paramMap.get('productId')
-    this.title = productId
+    this.title = this.routerInfo.snapshot.paramMap.get('productId')
   }
 
 }
