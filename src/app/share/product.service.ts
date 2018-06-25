@@ -29,13 +29,13 @@ export class ProductService {
     return this.products
   }
 
-  getProductItem(id: number): Product {
-    return this.products.find((product) => product.id == id)
-  }
+  // getProductItem(id: number): Product {
+    // return this.products.find((product) => product.id == id)
+  // }
 
-  getComments(id: number): Comment[] {
-    return this.comments.filter((item: Comment) => item.productId == id)
-  }
+  // getComments(id: number): Comment[] {
+    // return this.comments.filter((item: Comment) => item.productId == id)
+  // }
 }
 
 export class Product {
